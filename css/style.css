@@ -1,0 +1,248 @@
+/* GolosText-Regular */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/GolosText-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* GolosText-Medium */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/GolosText-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* GolosText-SemiBold */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/GolosText-SemiBold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* GolosText-Bold */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/GolosText-Bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* Merriweather-Regular */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Merriweather-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* Montserrat-Medium */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*$font-family: "Golos Text", sans-serif;*/
+/*$second-family: "Merriweather", sans-serif;*/
+/*$third-family: "Montserrat", sans-serif;*/
+
+/*---------- Базовые стили ----------*/
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #FFFFFF;
+    color: #313131;
+    position: relative;
+    overflow-x: hidden;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+fieldset {
+    margin: 0;
+}
+
+/*---------- Основные стили ----------*/
+/*.visually-hidden {*/
+/*    position: fixed;*/
+/*    transform: scale(0);*/
+/*}*/
+
+.container {
+    --width: 1180px;
+    --padding: 30px;
+    max-width: calc(var(--width) + (var(--padding) * 2));
+    padding: 0 var(--padding);
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.btn {
+    color: #FFF;
+    padding: 20px;
+    border-radius: 66px;
+    background-color: #F44;
+    box-shadow: 0 4px 20px 0 #FA5A5A;
+    transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #FF6767;
+}
+
+.btn:active:not(:disabled) {
+    background-color: #52E36A;
+    box-shadow: 0 4px 20px 0 #52E36A;
+}
+
+.btn:focus:not(:disabled) {
+    border-color: #D5B4A8;
+}
+
+.btn:disabled {
+    background-color: #C1C1C1;
+    box-shadow: none;
+}
+
+.text-red {
+    color: #f54932;
+}
+
+/*---------- Header start ----------*/
+.header {
+    background-image: url("../img/hero-img.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.header__container {
+    padding-top: 26px;
+}
+
+.header__link {
+    display: flex;
+    gap: 6px;
+}
+
+.header__text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #595653;
+    text-transform: uppercase;
+}
+/*---------- Header end ----------*/
+
+/*---------- Hero start ----------*/
+.hero {
+    padding: 62px 0 130px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__content {
+    max-width: 50%;
+}
+
+.hero__title {
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+.hero__title-center {
+    display: block;
+    text-align: center;
+}
+
+.hero__text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*---------- Footer start ----------*/
+.footer {
+    padding: 30px 0 32px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    grid-template-areas:
+        'logo .'
+        'copyright developer';
+}
+
+.footer__logo {
+    grid-area: logo;
+}
+
+.footer__copyright {
+    grid-area: copyright;
+}
+
+.footer__developer {
+    grid-area: developer;
+    justify-self: end;
+    min-width: 230px;
+}
+
+.footer__developer-item {
+    margin-bottom: 10px;
+}
+
+.footer__developer-item:last-child {
+    margin-bottom: 0;
+}
+/*---------- Footer end ----------*/
