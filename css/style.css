@@ -101,11 +101,6 @@ fieldset {
 }
 
 /*---------- Основные стили ----------*/
-/*.visually-hidden {*/
-/*    position: fixed;*/
-/*    transform: scale(0);*/
-/*}*/
-
 .container {
     --width: 1220px;
     --padding: 30px;
@@ -150,6 +145,7 @@ fieldset {
 
 .text-red {
     color: #f54932;
+    font-weight: 600;
 }
 
 /*---------- Header start ----------*/
@@ -219,8 +215,8 @@ fieldset {
 }
 
 .hero__btn-support {
-     color: #fff;
-     background-color: #1f1f1f;
+    color: #fff;
+    background-color: #1f1f1f;
 }
 
 .hero__btn-support:hover {
@@ -244,6 +240,7 @@ fieldset {
 .ticker {
     background-color: #f54932;
     overflow: hidden;
+    margin-bottom: 80px;
 }
 
 .ticker__container {
@@ -253,7 +250,7 @@ fieldset {
     font-family: "Merriweather", sans-serif;
     font-weight: 400;
     font-size: 22px;
-    padding: 18px 0;
+    padding: 18px 12px;
     text-transform: uppercase;
     white-space: nowrap;
     animation: marquee 30s linear infinite;
@@ -284,6 +281,26 @@ fieldset {
     }
 }
 /*---------- Ticker end ----------*/
+
+/*---------- Support start ----------*/
+.support__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.support__text {
+    max-width: 764px;
+    line-height: 1.35;
+}
+
+.support__img {
+    background-image: url("../img/support-img.jpg");
+    width: 394px;
+    height: 250px;
+}
+/*---------- Support end ----------*/
 
 /*---------- Footer start ----------*/
 .footer {

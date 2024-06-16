@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Добавляем немного дополнительного пространства, чтобы избежать скачков
-  totalWidth += 30 * (tickerTexts.length - 1);
+  totalWidth += 44 * (tickerTexts.length - 1);
 
   tickerContainer.style.width = `${totalWidth}px`;
 
