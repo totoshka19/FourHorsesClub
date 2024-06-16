@@ -238,6 +238,52 @@ fieldset {
     color: #fff;
     background-color: #1f1f1f;
 }
+/*---------- Hero end ----------*/
+
+/*---------- Ticker start ----------*/
+.ticker {
+    background-color: #f54932;
+    overflow: hidden;
+}
+
+.ticker__container {
+    display: flex;
+    gap: 30px;
+    color: #FFFFFF;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 18px 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.ticker__text {
+    position: relative;
+}
+
+.ticker__text:after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*---------- Ticker end ----------*/
 
 /*---------- Footer start ----------*/
 .footer {
